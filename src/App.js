@@ -5,7 +5,7 @@ import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
-import { removeFeature, buyItem, addFeature } from './actions/index'
+import { removeFeature, addFeature } from './actions/index'
 const App = props => {
 
 
