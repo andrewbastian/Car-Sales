@@ -54,6 +54,12 @@ Follow these steps for completing your project.
 - Plan out your state management structure as mentioned above. The only requirment is that you _must_ use Redux
 - Write out the steps you think you'll need to complete this project. It seems silly, but doing this with every project will help you grow into a better developer a lot faster.
 - Take note of the few comments throughout the app. They are there as little guides to nudge you in the right direction. You're welcome 😉
+___________________________________________________
+// dispatch an action to remove an item - App.js
+// dipsatch an action to add an item - App.js
+// {/* Add an onClick to run a function to remove a feature */} -AddedFeature
+// {/* Add an onClick that will let you add a feature to your car */} - AdditionalFeature
+___________________________________________________
 
 **Step 2 - And... Action! 🎬**
 

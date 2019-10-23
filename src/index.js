@@ -2,8 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
+import { createStore, combineReducers } from "redux";
+import { Provider } from "react-redux"
+import { reducer as buyReducer } from "./reducers/buy"
+import { reducer as removeItemReducer } from "./reducers/removeItem"
+
 import 'bulma/css/bulma.css';
 import './styles.scss';
 
-const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+// this combines everything into one giant main reducer,
+// so our action types still need to be unique
+const rootReducer = combineReducers({
+  buy: buyReducer,
+  removeItem: removeItemReducer
+});
+// create our store or "global state object"
+
+const store = createStore(rootReducer);
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+<Provider store ={store}>
+<App />
+</Provider>
+, rootElement);
